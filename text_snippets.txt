@@ -1,0 +1,22 @@
+CREATE TABLE "usdot" (
+	"USDOT"	INTEGER UNIQUE,
+	"MC_docket#"	TEXT,
+	"entity_type"	TEXT,
+	"operating_status"	TEXT,
+	"out_of_service"	TEXT,
+	"legal_name"	TEXT,
+	"dba_name"	TEXT,
+	"contact_name"	TEXT,
+	"physical_address"	TEXT,
+	"business_phone"	TEXT,
+	"mobile_number"	TEXT,
+	"email_address"	TEXT,
+	"mailnig_address"	TEXT,
+	"power units"	INTEGER,
+	"drivers"	INTEGER,
+	"mcs 150"	TEXT,
+	"Mileage (Year)"	TEXT,
+	"operation_classification"	TEXT,
+	"carrier_operation"	TEXT,
+	"cargo_carried"	TEXT
+);
