@@ -7,7 +7,7 @@ import csv
 options = Options()
 driver = webdriver.Chrome(chrome_options=options)
 sleep_time = 1
-path = 'https://www.yellowpages.com/search?search_terms=Truck%20Insurance%20brokers&geo_location_terms=TX&page='
+path = 'https://www.yellowpages.com/search?search_terms=semi%20car%20wash&geo_location_terms=TX&page='
 
 xpath = {
 	'title': '//*[@id="main-header"]/article/div',
@@ -16,7 +16,7 @@ xpath = {
 	'years_in_biz' : '//*[@id="main-header"]/article/section[2]/div[2]/div/div'
 }
 
-f  = open('./data/clients/yellowpages_TX.csv', 'w')
+f  = open('./data/clients/car_wash_TX.csv', 'w')
 writer = csv.DictWriter(f, fieldnames=['title', 'address','phone','years_in_biz','email','website'], lineterminator = '\n')
 writer.writeheader()
 
@@ -28,8 +28,11 @@ def run(page):
 	
 	for i in range(0,len(elements)):
 		record  = {}
-		elements = driver.find_elements_by_class_name('result')
-		elements[i].click()
+		try:
+			elements = driver.find_elements_by_class_name('result')
+			elements[i].click()
+		except:
+			pass
 		time.sleep(sleep_time)
 		
 		for key, val in xpath.items():
@@ -55,5 +58,5 @@ def run(page):
 		time.sleep(sleep_time)
 		time.sleep(sleep_time)
 
-for page in range(0,100):
+for page in range(10,100):
 	run(page)

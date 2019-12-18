@@ -2,6 +2,7 @@ import sqlite3
 import csv
 from values.string import db_name
 from datetime import datetime, timedelta
+import usaddress
 
 
 class DB:
@@ -86,10 +87,13 @@ class DB:
         myFile.writerow(['USDOT',
                          'MC_docket#', 'entity_type', 'operating_status',
                          'out_of_service', 'legal_name', 'dba_name',
-                         'contact_name', 'physical_address', 'business_phone',
-                         'mobile_number', 'email_address', 'mailnig_address', 'power units',
+                         'contact_name', 'physical_address', 'physical zip', 'business_phone',
+                         'mobile_number', 'email_address', 'mailnig_address', 'mailing zip', 'power units',
                          'drivers', 'mcs 150', 'Mileage (Year)',
                          'operation_classification', 'carrier_operation', 'cargo_carried'])
         for row in data:
-            myFile.writerow(row)
+            parse_data = [i for i in row]
+            parse_data.insert(9, parse_data[8].split().pop())
+            parse_data.insert(14, parse_data[13].split().pop())
+            myFile.writerow(parse_data)
         fp.close()

@@ -6,7 +6,7 @@ from objects.sms_results import SMSResults
 def main():
 
     db = DB()
-    # driver = Driver()
+    driver = Driver()
     # fmcsa = FMCSA(driver)
     # fmcsa.get_carrier_data_range_writedb(db, start=db.get_last_record())
 

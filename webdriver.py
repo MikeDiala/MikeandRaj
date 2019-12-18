@@ -5,7 +5,8 @@ from selenium import webdriver
 class Driver:
     def __init__(self):
         options = Options()
-        self.instance = webdriver.Chrome()
+        options.add_argument('--headless')
+        self.instance = webdriver.Chrome(chrome_options=options)
 
     def navigate(self, url):
         if isinstance(url, str):
