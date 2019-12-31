@@ -46,8 +46,9 @@ class SMSResults:
 
         all_records = db.get_records_w_no_sms_data(num_of_days.strftime('%Y-%m-%d'), self.today.strftime('%Y-%m-%d'))
 
-        for rec in all_records:
+        for i, rec in enumerate(all_records):
             ret = self.get_sms_result_one(rec[0])
+            print("updating record " + str(i) + " / " + str(len(all_records)))
             if ret:
                 db.update_record_with_sms_results(ret, rec[0])
             else:

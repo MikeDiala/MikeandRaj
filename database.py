@@ -2,7 +2,7 @@ import sqlite3
 import csv
 from values.string import db_name
 from datetime import datetime, timedelta
-import usaddress
+from helpers.address_conversion import parse_address
 
 
 class DB:
@@ -87,13 +87,27 @@ class DB:
         myFile.writerow(['USDOT',
                          'MC_docket#', 'entity_type', 'operating_status',
                          'out_of_service', 'legal_name', 'dba_name',
-                         'contact_name', 'physical_address', 'physical zip', 'business_phone',
-                         'mobile_number', 'email_address', 'mailnig_address', 'mailing zip', 'power units',
+                         'contact_name', 'physical_address', 'physical_city', 'physical_state', 'physical_zip', 'business_phone',
+                         'mobile_number', 'email_address', 'mailing_address', 'mailing_city', 'mailing_state',
+                         'mailing_zip', 'power units',
                          'drivers', 'mcs 150', 'Mileage (Year)',
                          'operation_classification', 'carrier_operation', 'cargo_carried'])
         for row in data:
-            parse_data = [i for i in row]
-            parse_data.insert(9, parse_data[8].split().pop())
-            parse_data.insert(14, parse_data[13].split().pop())
-            myFile.writerow(parse_data)
+            line_data = [i for i in row]
+            pa, pc, ps, pz = parse_address(line_data[8])
+            ma, mc, ms, mz = parse_address(line_data[12])
+
+            line_data[8] = pa
+            line_data.insert(9, pc)
+            line_data.insert(10, ps)
+            line_data.insert(11, pz)
+
+            print(line_data)
+            line_data[15] = ma
+            line_data.insert(16, mc)
+            line_data.insert(17, ms)
+            line_data.insert(18, mz)
+
+            # parse_data.insert(14, parse_data[13].split().pop())
+            myFile.writerow(line_data)
         fp.close()

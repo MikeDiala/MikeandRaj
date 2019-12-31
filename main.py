@@ -2,19 +2,48 @@ from webdriver import Driver
 from objects.fmcsa import FMCSA
 from database import DB
 from objects.sms_results import SMSResults
+from helpers.email import email
+import argparse
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--sms_res", help="runs SMS Results", action='store_true')
+    parser.add_argument("--fmcsa", help="runs FMCSA", action='store_true')
+    parser.add_argument("--email_records", help="generates Database", type=int)
+    args = parser.parse_args()
 
+    if args.fmcsa:
+        fmcsa()
+    if args.sms_res:
+        get_sms()
+    if args.email_records:
+        get_records(args.email_records)
+
+def fmcsa():
     db = DB()
     driver = Driver()
-    # fmcsa = FMCSA(driver)
-    # fmcsa.get_carrier_data_range_writedb(db, start=db.get_last_record())
+    fmcsa = FMCSA(driver)
+    fmcsa.get_carrier_data_range_writedb(db, start=db.get_last_record())
+    db.conn.close()
 
-    # smsres = SMSResults(driver)
-    # smsres.get_sms_results_writedb(db)
+def get_sms():
+    db = DB()
+    driver = Driver()
+    smsres = SMSResults(driver)
+    smsres.get_sms_results_writedb(db)
+    db.conn.close()
 
-    ret = db.get_records_for_anhdy('CA', days=30)
+
+def get_records(days):
+    db = DB()
+    ret = db.get_records_for_anhdy('CA', days=days)
     db.write_db_to_csv(ret, 'CA')
+    ret = db.get_records_for_anhdy('AZ', days=days)
+    db.write_db_to_csv(ret, 'AZ')
+    ret = db.get_records_for_anhdy('TX', days=days)
+    db.write_db_to_csv(ret, 'TX')
+
+    email("./data/AZ.csv", 'romanbogza@gmail.com')
 
     db.conn.close()
 
