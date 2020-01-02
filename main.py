@@ -9,7 +9,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--sms_res", help="runs SMS Results", action='store_true')
     parser.add_argument("--fmcsa", help="runs FMCSA", action='store_true')
-    parser.add_argument("--email_records", help="generates Database", type=int)
+    parser.add_argument("--email_records", help="get database and number of days", type=int)
     args = parser.parse_args()
 
     if args.fmcsa:

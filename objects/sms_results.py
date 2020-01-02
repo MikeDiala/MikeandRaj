@@ -48,8 +48,9 @@ class SMSResults:
 
         for i, rec in enumerate(all_records):
             ret = self.get_sms_result_one(rec[0])
-            print("updating record " + str(i) + " / " + str(len(all_records)))
             if ret:
                 db.update_record_with_sms_results(ret, rec[0])
+                print("updating record " + str(i) + " / " + str(len(all_records)))
             else:
+                print("updating record but no data " + str(i) + " / " + str(len(all_records)))
                 pass

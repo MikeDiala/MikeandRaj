@@ -8,7 +8,6 @@ from email import encoders
 
 def email(file, toaddr):
     fromaddr = "btconsultsdata@gmail.com"
-    toaddr = "romanbogza@gmail.com"
 
     # instance of MIMEMultipart
     msg = MIMEMultipart()
