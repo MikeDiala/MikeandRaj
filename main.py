@@ -44,9 +44,7 @@ def get_records(days, email_name):
     ret = db.get_records_for_anhdy('TX', days=days)
     db.write_db_to_csv(ret, 'TX')
 
-    email("./data/AZ.csv", email_name)
-    email("./data/CA.csv", email_name)
-    email("./data/TX.csv", email_name)
+    email(["./data/AZ.csv", "./data/CA.csv", "./data/TX.csv"], email_name)
 
     db.conn.close()
 

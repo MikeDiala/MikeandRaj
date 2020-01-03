@@ -27,13 +27,14 @@ def email(file, toaddr):
     # attach the body with the msg instance
     msg.attach(MIMEText(body, 'plain'))
 
+    for f in file:
     # open the file to be sent
-    attachment = open(file, "rb")
-    p = MIMEBase('application', 'octet-stream')
-    p.set_payload((attachment).read())
-    encoders.encode_base64(p)
-    p.add_header('Content-Disposition', "attachment; filename= %s" % os.path.basename(file))
-    msg.attach(p)
+        attachment = open(f, "rb")
+        p = MIMEBase('application', 'octet-stream')
+        p.set_payload((attachment).read())
+        encoders.encode_base64(p)
+        p.add_header('Content-Disposition', "attachment; filename= %s" % os.path.basename(f))
+        msg.attach(p)
 
 
     # creates SMTP session
