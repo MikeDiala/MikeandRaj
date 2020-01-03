@@ -9,7 +9,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--sms_res", help="runs SMS Results", action='store_true')
     parser.add_argument("--fmcsa", help="runs FMCSA", action='store_true')
-    parser.add_argument("--email_records", help="get database and number of days", type=int)
+    parser.add_argument("--email_records", help="2 arguments, first is num of days, second is the email", nargs=2)
     args = parser.parse_args()
 
     if args.fmcsa:
@@ -17,7 +17,7 @@ def main():
     if args.sms_res:
         get_sms()
     if args.email_records:
-        get_records(args.email_records)
+        get_records(args.email_records[0], args.email_records[1])
 
 def fmcsa():
     db = DB()
@@ -34,7 +34,8 @@ def get_sms():
     db.conn.close()
 
 
-def get_records(days):
+def get_records(days, email_name):
+    days = int(days)
     db = DB()
     ret = db.get_records_for_anhdy('CA', days=days)
     db.write_db_to_csv(ret, 'CA')
@@ -43,7 +44,9 @@ def get_records(days):
     ret = db.get_records_for_anhdy('TX', days=days)
     db.write_db_to_csv(ret, 'TX')
 
-    email("./data/AZ.csv", 'romanbogza@gmail.com')
+    email("./data/AZ.csv", email_name)
+    email("./data/CA.csv", email_name)
+    email("./data/TX.csv", email_name)
 
     db.conn.close()
 
