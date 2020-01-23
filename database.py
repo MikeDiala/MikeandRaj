@@ -82,7 +82,7 @@ class DB:
         return ret
 
     def write_db_to_csv(self, data, file_name):
-        fp = open(r'C:\Users\roman\Documents\TruckAutomation\data\\' + file_name + '.csv', 'w')
+        fp = open('./data/' + file_name + '.csv', 'w')
         myFile = csv.writer(fp, lineterminator='\n')
         myFile.writerow(['USDOT',
                          'MC_docket#', 'entity_type', 'operating_status',
