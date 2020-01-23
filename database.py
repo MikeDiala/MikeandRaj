@@ -85,28 +85,36 @@ class DB:
         fp = open('./data/' + file_name + '.csv', 'w')
         myFile = csv.writer(fp, lineterminator='\n')
         myFile.writerow(['USDOT',
-                         'MC_docket#', 'entity_type', 'operating_status',
-                         'out_of_service', 'legal_name', 'dba_name',
-                         'contact_name', 'physical_address', 'physical_city', 'physical_state', 'physical_zip', 'business_phone',
-                         'mobile_number', 'email_address', 'mailing_address', 'mailing_city', 'mailing_state',
-                         'mailing_zip', 'power units',
-                         'drivers', 'mcs 150', 'Mileage (Year)',
-                         'operation_classification', 'carrier_operation', 'cargo_carried'])
+                         'MC_no', 'MCS 150', 'Entity_type', 'Operating_status',
+                         'Out_of_service', 'Legal_name', 'Dba_name',
+                         'Contact_name', 'Physical_address', 'Physical_city', 'Physical_state', 'Physical_zip', 'Business_phone',
+                         'Mobile_number', 'Email_address', 'Mailing_address', 'Mailing_city', 'Mailing_state',
+                         'Mailing_zip', 'Power units',
+                         'Drivers', 'Mileage (Year)',
+                         'Operation_classification', 'Carrier_operation', 'Cargo_carried'])
         for row in data:
             line_data = [i for i in row]
             pa, pc, ps, pz = parse_address(line_data[8])
             ma, mc, ms, mz = parse_address(line_data[12])
+
+            pz = pz.split('-')[0]
+            mz = mz.split('-')[0]
 
             line_data[8] = pa
             line_data.insert(9, pc)
             line_data.insert(10, ps)
             line_data.insert(11, pz)
 
-            print(line_data)
+
             line_data[15] = ma
             line_data.insert(16, mc)
             line_data.insert(17, ms)
             line_data.insert(18, mz)
+
+            line_data[23] = line_data[23].replace(',' ,'')
+            line_data[24] = line_data[24].replace('Only (Non-HM)', '').replace(',','')
+
+            line_data.insert(2, line_data.pop(21))
 
             # parse_data.insert(14, parse_data[13].split().pop())
             myFile.writerow(line_data)

@@ -4,6 +4,7 @@ from database import DB
 from objects.sms_results import SMSResults
 from helpers.email import email
 import argparse
+from datetime import datetime
 
 def main():
     parser = argparse.ArgumentParser()
@@ -35,16 +36,23 @@ def get_sms():
 
 
 def get_records(days, email_name):
+
+    now = datetime.now()
+    calif = 'CA_' + now.strftime('%Y_%m_%d')
+    ariz = 'AZ_' + now.strftime('%Y_%m_%d')
+    tx = 'TX_' + now.strftime('%Y_%m_%d')
+
+
     days = int(days)
     db = DB()
     ret = db.get_records_for_anhdy('CA', days=days)
-    db.write_db_to_csv(ret, 'CA')
+    db.write_db_to_csv(ret, calif)
     ret = db.get_records_for_anhdy('AZ', days=days)
-    db.write_db_to_csv(ret, 'AZ')
+    db.write_db_to_csv(ret, ariz)
     ret = db.get_records_for_anhdy('TX', days=days)
-    db.write_db_to_csv(ret, 'TX')
+    db.write_db_to_csv(ret, tx)
 
-    email(["./data/AZ.csv", "./data/CA.csv", "./data/TX.csv"], email_name)
+    email(['./data/' + calif + '.csv', './data/' + ariz + '.csv', './data/' + tx + '.csv'], email_name)
 
     db.conn.close()
 

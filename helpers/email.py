@@ -7,7 +7,7 @@ from email import encoders
 
 
 def email(file, toaddr):
-    fromaddr = "usdotdataserver@gmail.com"
+    fromaddr = "aceinsurance7@gmail.com"
 
     # instance of MIMEMultipart
     msg = MIMEMultipart()
@@ -19,7 +19,7 @@ def email(file, toaddr):
     msg['To'] = toaddr
 
     # storing the subject
-    msg['Subject'] = "Application Data"
+    msg['Subject'] = "Daily New USDOT"
 
     # string to store the body of the mail
     body = "Trucking Data"
@@ -44,7 +44,7 @@ def email(file, toaddr):
     s.starttls()
 
     # Authentication
-    s.login(fromaddr, "Usdot1993!")
+    s.login(fromaddr, "Anhdy2019")
 
     # Converts the Multipart msg into a string
     text = msg.as_string()

@@ -2,12 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b449060-c2e9-4fee-b116-dcf3892edb91" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/AZ_2020_01_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/CA_2020_01_23.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/TX_2020_01_23.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/AZ.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/AZ.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/CA.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/CA.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/TX.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/TX.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/AZ.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/CA.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/TX.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/carrier_data/AZ.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/carrier_data/CA.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/carrier_data/TX.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/clients/CA_clients.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/clients/car_wash_TX - Copy.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/clients/car_wash_TX.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/clients/yellowpages_TX.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helpers/email.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/email.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objects/carrier_insurance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/text_snippets.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trucking_data_backup.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yellow_pages_scraper.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +47,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ignore.virus.scanning.warn.message" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AssetRelocation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
