@@ -93,7 +93,12 @@ class DB:
                          'Drivers', 'Mileage (Year)',
                          'Operation_classification', 'Carrier_operation', 'Cargo_carried'])
         for row in data:
-            line_data = [i for i in row]
+            line_data = []
+            for i in row:
+                if type(i) is str:
+                   i = i.title()
+                line_data.append(i)
+
             pa, pc, ps, pz = parse_address(line_data[8])
             ma, mc, ms, mz = parse_address(line_data[12])
 
@@ -113,6 +118,12 @@ class DB:
 
             line_data[23] = line_data[23].replace(',' ,'')
             line_data[24] = line_data[24].replace('Only (Non-HM)', '').replace(',','')
+
+            line_data[10] = line_data[10].upper()
+            line_data[17] = line_data[17].upper()
+
+            print(line_data)
+
 
             line_data.insert(2, line_data.pop(21))
 
