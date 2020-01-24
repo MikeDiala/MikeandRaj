@@ -117,16 +117,15 @@ class DB:
             line_data.insert(18, mz)
 
             line_data[23] = line_data[23].replace(',' ,'')
-            line_data[24] = line_data[24].replace('Only (Non-HM)', '').replace(',','')
+            line_data[24] = line_data[24].replace('Only (Non-Hm)', '').replace(',','')
 
             line_data[10] = line_data[10].upper()
             line_data[17] = line_data[17].upper()
 
-            print(line_data)
-
-
             line_data.insert(2, line_data.pop(21))
+            line_data[-1] = line_data[-1].split(',')[0]
 
+            print(line_data)
             # parse_data.insert(14, parse_data[13].split().pop())
             myFile.writerow(line_data)
         fp.close()
