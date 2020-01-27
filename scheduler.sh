@@ -1,7 +1,5 @@
-while true
-do 
- echo "Starting FMCSA"
- python3 main.py --fmcsa
- python3 main.py --email_records 1 anhdy@acecic.com 
- sleep 86400
-done
+#!/bin/bash
+echo "Starting FMCSA"
+cd /home/ubuntu/TruckAutomation && /usr/bin/python3 /home/ubuntu/TruckAutomation/main.py --fmcsa
+echo "emailing records"
+/usr/bin/python3 /home/ubuntu/TruckAutomation/main.py --email_records 1 anhdy@acecic.com

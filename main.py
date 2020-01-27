@@ -41,18 +41,21 @@ def get_records(days, email_name):
     calif = 'CA_' + now.strftime('%Y_%m_%d')
     ariz = 'AZ_' + now.strftime('%Y_%m_%d')
     tx = 'TX_' + now.strftime('%Y_%m_%d')
-
+    ca_az_tx = 'AZ_CA_TX_' + now.strftime('%Y_%m_%d')
 
     days = int(days)
     db = DB()
-    ret = db.get_records_for_anhdy('CA', days=days)
-    db.write_db_to_csv(ret, calif)
-    ret = db.get_records_for_anhdy('AZ', days=days)
-    db.write_db_to_csv(ret, ariz)
-    ret = db.get_records_for_anhdy('TX', days=days)
-    db.write_db_to_csv(ret, tx)
+    ca_rec = db.get_records_for_anhdy('CA', days=days)
+    db.write_db_to_csv(ca_rec, calif)
+    az_rec = db.get_records_for_anhdy('AZ', days=days)
+    db.write_db_to_csv(az_rec, ariz)
+    tx_rec = db.get_records_for_anhdy('TX', days=days)
+    db.write_db_to_csv(tx_rec, tx)
 
-    email(['./data/' + calif + '.csv', './data/' + ariz + '.csv', './data/' + tx + '.csv'], email_name)
+    all_rec = ca_rec + az_rec + tx_rec
+    db.write_db_to_csv(all_rec, ca_az_tx)
+
+    email(['./data/' + calif + '.csv', './data/' + ariz + '.csv', './data/' + tx + '.csv', './data/' + ca_az_tx + '.csv'], email_name)
 
     db.conn.close()
 

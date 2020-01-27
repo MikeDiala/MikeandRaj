@@ -1,0 +1,58 @@
+USDOT,MC_no,MCS 150,Entity_type,Operating_status,Out_of_service,Legal_name,Dba_name,Contact_name,Physical_address,Physical_city,Physical_state,Physical_zip,Business_phone,Mobile_number,Email_address,Mailing_address,Mailing_city,Mailing_state,Mailing_zip,Power units,Drivers,Mileage (Year),Operation_classification,Carrier_operation,Cargo_carried
+3385881,,2020-01-23,Carrier,Not Authorized,None,Carrillo Interstate Llc,,,9201 San Carlos Ave Apt A,South Gate,CA,90280,(323) 384-4912,,,9201 San Carlos Ave Apt A,South Gate,CA,90280,1,4,,Auth. For Hire ,Interstate ,General Freight
+3385883,,2020-01-23,Carrier,Active,None,A Sewerguy Plumbing,A Sewer Guy,,206 Foresthill Ave,Auburn,CA,95603,(530) 313-7923,,,206 Foresthill Ave,Auburn,CA,95603,1,0,,Auth. For Hire ,Intrastate  ,Other
+3385912,,2020-01-23,Carrier,Not Authorized,None,Falcon Logistics Global Inc,,,667 Brea Canyon Rd Ste 20B,Walnut,CA,91789,(941) 584-9868,,,667 Brea Canyon Rd Ste 20B,Walnut,CA,91789,0,0,,Auth. For Hire ,Interstate ,General Freight
+3385921,,2020-01-23,Carrier,Not Authorized,None,Dustin Penman,Penman Construction,,2571 Shawnee Rd,Auburn,CA,95603,(941) 584-9868,,,2571 Shawnee Rd,Auburn,CA,95603,1,1,,Auth. For Hire ,Interstate ,Construction
+3385991,,2020-01-23,Carrier,Active,None,Ljl Trucking Inc,,,11638 Redwood Ave,Hesperia,CA,92345,(760) 412-9371,,,11638 Redwood Ave,Hesperia,CA,92345,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386003,,2020-01-23,Carrier,Active,None,Royerk Trucking,,,9080 Yucca Way,Thornton,CO,80229,(720) 985-0933,,,9080 Yucca Way,Thornton,CO,80229,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386029,,2020-01-23,Carrier,Not Authorized,None,Pink Elephants On The Move Inc,,,720 S Wolfe Rd Ste 334,Sunnyvale,CA,94086,(310) 876-4417,,,720 S Wolfe Rd Ste 334,Sunnyvale,CA,94086,1,4,,Auth. For Hire ,Interstate ,Household Goods
+3386030,,2020-01-23,Carrier,Not Authorized,None,Epic Ventures Inc,Convoy Beverage Alliance,,200 Concourse Blvd,Santa Rosa,CA,95403,(877) 541-8771,,,200 Concourse Blvd,Santa Rosa,CA,95403,51,54,,Auth. For Hire ,Interstate ,General Freight
+3386042,,2020-01-23,Carrier,Active,None,Roadrunner Trucking Co Llc,,,8460 Mesa Terrace Rd,Santee,CA,92071,(619) 448-9560,,,8460 Mesa Terrace Rd,Santee,CA,92071,1,1,,Auth. For Hire ,Intrastate  ,Construction
+3386058,,2020-01-23,Carrier,Not Authorized,None,Nenas Produce Llc,,,1149 Holdridge St,Calexico,CA,92231,(760) 970-9222,,,1149 Holdridge St,Calexico,CA,92231,1,1,,Auth. For Hire ,Interstate ,Fresh Produce
+3386073,,2020-01-23,Carrier,Active,None,Ac & J Transport Llc,,,12107 Hill Country Dr,Bakersfield,CA,93312,(818) 339-1894,,,12107 Hill Country Dr,Bakersfield,CA,93312,2,2,,Auth. For Hire ,Intrastate  ,General Freight
+3386103,,2020-01-23,Carrier,Active,None,Fams Trucking Inc,,,1606 E 83Rd St,Los Angeles,CA,90001,(323) 718-3898,,,1606 E 83Rd St,Los Angeles,CA,90001,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386113,,2020-01-23,Carrier,Not Authorized,None,Matthew Quinnell,Quinnell Trucking,,375 Wyentae St,Crescent City,CA,95531,(562) 359-7464,,,375 Wyentae St,Crescent City,CA,95531,1,1,,Auth. For Hire ,Interstate ,General Freight
+3386116,,2020-01-23,Carrier,Not Authorized,None,Singh Transportation Llc,,,31972 Ruxton St,Menifee,CA,92584,(626) 367-1734,,,22364 Alessandro Blvd,Moreno Valley,CA,92553,1,2,,Auth. For Hire ,Interstate ,General Freight
+3386121,,2020-01-23,Carrier,Not Authorized,None,Susana Araceli Cornejo,Cj Trucking,,17925 Pesante Rd,Salinas,CA,93907,(831) 269-2930,,,"Po Box 1671
+Salinas, Ca   93902-1671",,,,1,1,,Auth. For Hire ,Interstate ,Fresh Produce
+3386126,,2020-01-23,Carrier,Active,None,Danielian Transport Inc,,,6200 Costello Ave,Van Nuys,CA,91401,(818) 402-3457,,,6200 Costello Ave,Van Nuys,CA,91401,3,6,,Auth. For Hire ,Intrastate  ,General Freight
+3386128,,2020-01-23,Carrier,Active,None,Rosario Vazquez Jr,Vazquez Legacy Freight Services,,9847 Orchard St,Bloomington,CA,92316,(909) 275-9377,,,9847 Orchard St,Bloomington,CA,92316,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386130,,2020-01-23,Carrier,Active,None,Star Packaging Enterprises Inc,,,"35355 Linda Rosea Rd 35355 Linda Rosea Rd
+Temecula, Ca   92592-9532",,,,(951) 529-6979,,,"35355 Linda Rosea Rd 35355 Linda Rosea Rd
+Temecula, Ca   92592-9532",,,,0,1,,Auth. For Hire ,Intrastate  ,Other
+3386136,,2020-01-23,Carrier,Active,None,Carlos Alberto Jimenez Galvan,Cg Trucking,,1910 Canon Dr,Imperial,CA,92251,(760) 886-9550,,,1910 Canon Dr,Imperial,CA,92251,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386137,,2020-01-23,Carrier,Not Authorized,None,Mkp Transport Inc,,,4694 W Ashlan Ave,Fresno,CA,93722,(559) 906-4720,,,4694 W Ashlan Ave,Fresno,CA,93722,1,1,,Auth. For Hire ,Interstate ,General Freight
+3386145,,2020-01-23,Carrier,Active,None,M & D Brothers Llc,,,2040 California St Apt 4,Mountain View,CA,94040,(806) 200-2529,,,2040 California St Apt 4,Mountain View,CA,94040,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386180,,2020-01-23,Carrier,Active,None,12Th Trucking Llc,,,472 Hartwick Ln,Fairfield,CA,94533,(714) 512-9347,,,472 Hartwick Ln,Fairfield,CA,94533,1,1,1 (2019),Auth. For Hire ,Intrastate  ,Construction
+3386187,,2020-01-23,Carrier,Active,None,Peter Pan Delivery Inc,,,6129 Woodward Ave,Maywood,CA,90270,(323) 690-0674,,,6129 Woodward Ave,Maywood,CA,90270,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386211,,2020-01-23,Carrier,Active,None,Javier Ramirez,J & C Trucking,,5024 Etiwanda Ave,Jurupa Valley,CA,91752,(909) 936-6736,,,5024 Etiwanda Ave,Jurupa Valley,CA,91752,1,1,,Auth. For Hire ,Intrastate  ,Other
+3386217,,2020-01-23,Carrier,Not Authorized,None,Jaideep Transport Inc,,,600 Hosking Ave Apt 62A,Bakersfield,CA,93307,(714) 340-6450,,,600 Hosking Ave Apt 62A,Bakersfield,CA,93307,1,1,,Auth. For Hire ,Interstate ,General Freight
+3386230,,2020-01-23,Carrier,Active,None,D&B Trucking Llc,,,3187 Waxwing Ln,Perris,CA,92571,(951) 233-2842,,,3187 Waxwing Ln,Perris,CA,92571,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386233,,2020-01-23,Carrier,Active,None,Medrano'S Trucking,,,15472 Aveiro Rd,Fontana,CA,92337,(909) 278-9188,,,15472 Aveiro Rd,Fontana,CA,92337,1,1,,Auth. For Hire ,Intrastate  ,Building Materials
+3386247,,2020-01-23,Carrier,Active,None,Ilya Vladimirivich Vasilkov,,,5016 Rose St,Sacramento,CA,95838,(941) 584-9868,,,5016 Rose St,Sacramento,CA,95838,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386255,,2020-01-23,Carrier,Not Authorized,None,Rooh Transport Inc,,,563 Raquel Ct,Merced,CA,95341,(209) 500-7878,,,563 Raquel Ct,Merced,CA,95341,1,1,,Auth. For Hire ,Interstate ,General Freight
+3386258,,2020-01-23,Carrier,Active,None,Tena Transportation,,,6311 Comstock Ave Apt F,Whittier,CA,90601,(562) 637-5195,,,6311 Comstock Ave Apt F,Whittier,CA,90601,1,2,,Auth. For Hire ,Intrastate  ,General Freight
+3386275,,2020-01-23,Carrier,Not Authorized,None,Jbarton Trucking Llc,,,3595 Santa Fe Ave,Long Beach,CA,90810,(562) 842-6094,,,3595 Santa Fe Ave,Long Beach,CA,90810,1,1,,Auth. For Hire ,Interstate ,General Freight
+3386290,,2020-01-23,Carrier,Active,None,Gurrola Trucking Llc,,,732 S Del Norte Ave,Kerman,CA,93630,(559) 355-7177,,,732 S Del Norte Ave,Kerman,CA,93630,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386305,,2020-01-23,Carrier,Not Authorized,None,Elv Logistics Llc,,,2059 Blenheim St,Riverside,CA,92507,(951) 300-3192,,,13911 E Amar Rd Unit A,La Puente,CA,91746,1,2,,Auth. For Hire ,Interstate ,General Freight
+3386306,,2020-01-23,Carrier,Not Authorized,None,K&T Auto Transport,,,415 W Douglas Ave,El Cajon,CA,92020,(619) 646-5481,,,415 W Douglas Ave,El Cajon,CA,92020,1,2,,Auth. For Hire ,Interstate ,General Freight
+3386307,,2020-01-23,Carrier,Active,None,Ccm Transport Inc,,,15571 Binney St,Hacienda Hts,CA,91745,(626) 945-5799,,,15571 Binney St,Hacienda Hts,CA,91745,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386328,,2020-01-23,Carrier,Not Authorized,None,D&M Express Trucking Llc,,,21661 Brookhurst St Apt 175,Huntingtn Bch,CA,92646,(949) 244-7982,,,21661 Brookhurst St Apt 175,Huntingtn Bch,CA,92646,1,1,,Auth. For Hire ,Interstate ,General Freight
+3386334,,2020-01-23,Carrier,Not Authorized,None,Mezquite Cargo Solutions Llc,,,1578 Via Del,"Rio
+ Corona",CA,92882,(909) 772-9695,,,1578 Via Del,"Rio
+ Corona",CA,92882,1,1,,Auth. For Hire ,Interstate ,General Freight
+3386335,,2020-01-23,Carrier,Active,None,Arf Transport Llc,,,266 Goldfinch Ln,Riverside,CA,92507,(951) 543-1691,,,266 Goldfinch Ln,Riverside,CA,92507,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386337,,2020-01-23,Carrier,Active,None,Red Lion Trucking Llc,,,1717 Wallace Ct,Sn Bernrdno,CA,92408,(909) 945-7528,,,1717 Wallace Ct,Sn Bernrdno,CA,92408,2,2,,Auth. For Hire ,Intrastate  ,General Freight
+3386341,,2020-01-23,Carrier,Not Authorized,None,Pinto'S Trucking Inc,,,6846 Adler Pl,Riverside,CA,92503,(714) 931-5572,,,6846 Adler Pl,Riverside,CA,92503,1,1,,Auth. For Hire ,Interstate ,General Freight
+3386342,,2020-01-23,Carrier,Not Authorized,None,Dhami Trans Inc,,,3727 Silvana Ln,Stockton,CA,95212,(209) 752-8071,,,3727 Silvana Ln,Stockton,CA,95212,1,2,,Auth. For Hire ,Interstate ,General Freight
+3386343,,2020-01-23,Carrier,Active,None,Jimenez Transportation Inc,,,132 S Clarence St,Los Angeles,CA,90033,(353) 506-7954,,,9905 Cherry Ave,Fontana,CA,92335,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386344,,2020-01-23,Carrier,Not Authorized,None,Lightwing Travel Coach Inc,,,13200 Crossroads Pkwy Ste 470,City Industry,CA,91746,(562) 821-5040,,,13200 Crossroads Pkwy Ste 470,City Industry,CA,91746,1,1,,Auth. For Hire ,Interstate ,Passengers
+3386346,,2020-01-23,Carrier,Active,None,B Y Sandhu Trans Inc,,,7414 Phinney Way,San Jose,CA,95139,(408) 608-7823,,,7414 Phinney Way,San Jose,CA,95139,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386350,,2020-01-23,Carrier,Active,None,Veer Takhar Trans Inc,,,1578 Swancreek Way,San Jose,CA,95121,(408) 561-9528,,,1578 Swancreek Way,San Jose,CA,95121,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386352,,2020-01-23,Carrier,Active,None,Andy & Sons Trucking Inc,,,1210 N 105Th Pl,Mesa,AZ,85207,(602) 688-0173,,,13612 Borden Ave,Sylmar,CA,91342,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386356,,2020-01-23,Carrier,Not Authorized,None,Hellas Transport Llc,,,4309 Foxrun Dr,Chino Hills,CA,91709,(407) 760-6488,,,4309 Foxrun Dr,Chino Hills,CA,91709,1,1,,Auth. For Hire ,Interstate ,General Freight
+3386360,,2020-01-23,Carrier,Not Authorized,None,Nv Logistics Inc,,,125 W Mountain St Apt 105,Glendale,CA,91202,(747) 777-0884,,,125 W Mountain St Apt 105,Glendale,CA,91202,1,1,,Auth. For Hire ,Interstate ,General Freight
+3386363,,2020-01-23,Carrier,Not Authorized,None,Convey Trucking Inc,,,15998 Bertero Ave,San Lorenzo,CA,94580,(408) 898-8138,,,15998 Bertero Ave,San Lorenzo,CA,94580,1,1,,Auth. For Hire ,Interstate ,General Freight
+3386366,,2020-01-23,Carrier,Active,None,Yanira Ireth Menjivar,Rdr Trucking,,8172 Maple Dr,Buena Park,CA,90620,(714) 767-9403,,,8172 Maple Dr,Buena Park,CA,90620,1,1,,Auth. For Hire ,Intrastate  ,General Freight
+3386394,,2020-01-23,Carrier,Not Authorized,None,Hrc Final Mile Llc,,,20023 Donora Ave,Torrance,CA,90503,(424) 352-5827,,,3975 De La Plz Ste 208,San Ysidro,CA,92173,1,4,,Auth. For Hire ,Interstate ,General Freight
+3386397,,2020-01-23,Carrier,Not Authorized,None,Southern California Flower Wholesale Inc,,,1335 Rocking W Dr Ste 261,Bishop,CA,93514,(818) 990-6724,,,1335 Rocking W Dr Ste 261,Bishop,CA,93514,1,4,,Auth. For Hire ,Interstate ,General Freight
