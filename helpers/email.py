@@ -7,7 +7,7 @@ from email import encoders
 
 
 def email(file, toaddr):
-    fromaddr = "aceinsurance7@gmail.com"
+    fromaddr = "aceinsurancescrapper@gmail.com"
 
     # instance of MIMEMultipart
     msg = MIMEMultipart()
@@ -44,7 +44,7 @@ def email(file, toaddr):
     s.starttls()
 
     # Authentication
-    s.login(fromaddr, "Anhdy2019")
+    s.login(fromaddr, "Admin1234abc")
 
     # Converts the Multipart msg into a string
     text = msg.as_string()
